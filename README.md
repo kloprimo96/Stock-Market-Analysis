@@ -18,7 +18,7 @@
     Dim averageChange As Double
     Dim rowCount As Long
   
-  For Each ws In Worksheets
+    For Each ws In Worksheets
       columNIndex = 0
       total = 0
       change = 0
@@ -117,6 +117,6 @@
     
     Next ws
   
-   End Sub
+    End Sub
 
 
