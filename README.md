@@ -1,22 +1,22 @@
 # Stock-Market-Analysis VBA_Challenge Code
 
-  Sub StockMarketAnalysis():
+     Sub StockMarketAnalysis():
   
     'Dimensions for Analysis'
   
-   Dim ws As Worksheet
+       Dim ws As Worksheet
   
     Dim colummIndex As Integer
     Dim rowIndex As Long
-   Dim yearlychange As Double
-   Dim percentChange As Double
-   Dim total As Double
-   Dim start As Long
-   Dim days As Integer
-   Dim change As Double
-   Dim dailyChange As Single
-   Dim averageChange As Double
-   Dim rowCount As Long
+    Dim yearlychange As Double
+    Dim percentChange As Double
+    Dim total As Double
+    Dim start As Long
+    Dim days As Integer
+    Dim change As Double
+    Dim dailyChange As Single
+    Dim averageChange As Double
+    Dim rowCount As Long
   
   For Each ws In Worksheets
       columNIndex = 0
@@ -103,20 +103,20 @@
       Next rowIndex
     
     
-  ws.Range("Q2") = "%" & WorksheetFunction.Max(ws.Range("K2:K" & rowCount)) * 100
-  ws.Range("Q3") = "%" & WorksheetFunction.Min(ws.Range("K2:K" & rowCount)) * 100
-  ws.Range("Q4") = WorksheetFunction.Max(ws.Range("L2:L" & rowCount))
+    ws.Range("Q2") = "%" & WorksheetFunction.Max(ws.Range("K2:K" & rowCount)) * 100
+    ws.Range("Q3") = "%" & WorksheetFunction.Min(ws.Range("K2:K" & rowCount)) * 100
+    ws.Range("Q4") = WorksheetFunction.Max(ws.Range("L2:L" & rowCount))
     
-  increase_number = WorksheetFunction.Match(WorksheetFunction.Max(ws.Range("K2:K" & rowCount)), ws.Range("K2:K" & rowCount), 0)
-  decrease_number = WorksheetFunction.Match(WorksheetFunction.Min(ws.Range("K2:k" & rowCount)), ws.Range("K2:K" & rowCount), 0)
-  volume_number = WorksheetFunction.Match(WorksheetFunction.Max(ws.Range("L2:L" & rowCount)), ws.Range("L2:L" & rowCount), 0)
+    increase_number = WorksheetFunction.Match(WorksheetFunction.Max(ws.Range("K2:K" & rowCount)), ws.Range("K2:K" & rowCount), 0)
+    decrease_number = WorksheetFunction.Match(WorksheetFunction.Min(ws.Range("K2:k" & rowCount)), ws.Range("K2:K" & rowCount), 0)
+    volume_number = WorksheetFunction.Match(WorksheetFunction.Max(ws.Range("L2:L" & rowCount)), ws.Range("L2:L" & rowCount), 0)
     
-  ws.Range("P2") = ws.Cells(increase_number + 1, 9)
-  ws.Range("P3") = ws.Cells(decrease_number + 1, 9)
-  ws.Range("P4") = ws.Cells(volume_number + 1, 9)
+    ws.Range("P2") = ws.Cells(increase_number + 1, 9)
+    ws.Range("P3") = ws.Cells(decrease_number + 1, 9)
+    ws.Range("P4") = ws.Cells(volume_number + 1, 9)
     
-  Next ws
+   Next ws
   
-End Sub
+  End Sub
 
 
