@@ -1,8 +1,5 @@
 # Stock-Market-Analysis VBA_Challenge Code
 
-
-
-'
 Sub StockMarketAnalysis():
   
   'Dimensions for Analysis'
@@ -122,4 +119,4 @@ Sub StockMarketAnalysis():
   
 End Sub
 
-'
+
