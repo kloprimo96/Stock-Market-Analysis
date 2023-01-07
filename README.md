@@ -1,22 +1,22 @@
 # Stock-Market-Analysis VBA_Challenge Code
 
-Sub StockMarketAnalysis():
+  Sub StockMarketAnalysis():
   
-  'Dimensions for Analysis'
+    'Dimensions for Analysis'
   
-  Dim ws As Worksheet
+   Dim ws As Worksheet
   
-  Dim colummIndex As Integer
-  Dim rowIndex As Long
-  Dim yearlychange As Double
-  Dim percentChange As Double
-  Dim total As Double
-  Dim start As Long
-  Dim days As Integer
-  Dim change As Double
-  Dim dailyChange As Single
-  Dim averageChange As Double
-  Dim rowCount As Long
+    Dim colummIndex As Integer
+    Dim rowIndex As Long
+   Dim yearlychange As Double
+   Dim percentChange As Double
+   Dim total As Double
+   Dim start As Long
+   Dim days As Integer
+   Dim change As Double
+   Dim dailyChange As Single
+   Dim averageChange As Double
+   Dim rowCount As Long
   
   For Each ws In Worksheets
       columNIndex = 0
